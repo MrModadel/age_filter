@@ -1,0 +1,108 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Roboto", sans-serif;
+}
+.wrapper {
+   min-height: 100%;
+   overflow: hidden;
+}
+.container {
+   width: 1440px;
+   margin: 20px auto 0;
+}
+.main-title {
+   font-size: 32px;
+   font-weight: 700;
+   margin: 10px 0px 30px 0px;
+}
+.form {
+   &__container {
+      display: flex;
+      justify-content: start;
+      align-items: end;
+      gap: 20px;
+   }
+
+   &__box {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: 8px;
+      input {
+         width: 300px;
+         border: 1px solid lightblue;
+         padding: 10px 16px;
+         border-radius: 8px;
+         height: 40px;
+      }
+   }
+
+   &__title {
+      font-size: 18px;
+      font-weight: 400;
+   }
+
+   &__btn {
+      padding: 7px 12px;
+      height: 40px;
+      background-color: blue;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 400;
+      border: 0;
+      border-radius: 10px;
+   }
+}
+
+.big-box {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   justify-content: center;
+   align-items: flex-start;
+   gap: 30px;
+}
+.box {
+   margin-top: 30px;
+   display: flex;
+   justify-content: flex-start;
+   padding: 30px;
+   gap: 18px;
+   height: 100%;
+   flex-direction: column;
+   &__title {
+      font-size: 24px;
+      font-weight: 500;
+   }
+}
+.box:not(:last-child) {
+   border-right: 2px solid #c4c4c4;
+}
+.item {
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+   gap: 24px;
+   flex-direction: column;
+   padding:  30px;
+   border: 1px solid #a49a9a;
+   border-radius: 12px;
+   &__title {
+      font-size: 24px;
+      font-weight: 500;
+   }
+   &__info {
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      align-items: center;
+      border-radius: 8px;
+      height: 40px;
+      background-color: #dadada;
+   }
+   &__text{
+      color:rgb(185, 186, 186);
+   }
+}
