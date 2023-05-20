@@ -105,4 +105,18 @@
    &__text{
       color:rgb(185, 186, 186);
    }
+   button{
+      height: 24px;
+      width: 60px;
+      background-color: blue;
+      border: 0;
+      border-radius: 8px;
+      color: #fff;
+   }
+}
+.title-box{
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
 }
